@@ -20,13 +20,11 @@ A high-performance, visually immersive web experience built with **Next.js 16**,
 - **Components**: [Shadcn UI](https://ui.shadcn.com/) / [Radix UI](https://www.radix-ui.com/)
 - **Animations**: [Anime.js 4](https://animejs.com/)
 - **Database**: [Prisma](https://www.prisma.io/)
-- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
 - [Bun](https://bun.sh/) installed on your machine.
-- A SQL database (PostgreSQL/SQLite) for Prisma.
 
 ### Installation
 
@@ -66,7 +64,6 @@ A high-performance, visually immersive web experience built with **Next.js 16**,
 - `src/components/pages`: High-level page components (Main, Project, Music, Fanmade).
 - `src/components/ui`: Reusable UI primitives (Shadcn).
 - `src/components/visualizers`: Custom animation and media visualizer logic.
-- `prisma`: Database schema and migration files.
 
 ## 📜 License
 
