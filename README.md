@@ -2,7 +2,7 @@
 
 A high-performance, visually immersive web experience built with **Next.js 16**, **Tailwind CSS 4**, and **Anime.js**. This project serves as a sophisticated portfolio and media showcase, featuring cinematic transitions, dynamic backgrounds, and a curated "fanmade" and music integration.
 
-![Banner]("https://ibb.co/WWqVyv65")
+<a href="https://ibb.co/WWqVyv65"><img src="https://i.ibb.co/pvGhzjxw/image.png" alt="image" border="0" /></a>
 
 ## ✨ Features
 
