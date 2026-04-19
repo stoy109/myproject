@@ -19,7 +19,6 @@ A high-performance, visually immersive web experience built with **Next.js 16**,
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **Components**: [Shadcn UI](https://ui.shadcn.com/) / [Radix UI](https://www.radix-ui.com/)
 - **Animations**: [Anime.js 4](https://animejs.com/)
-- **Database**: [Prisma](https://www.prisma.io/)
 
 ## 🛠️ Getting Started
 
