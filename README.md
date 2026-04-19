@@ -1,8 +1,8 @@
-# 🌌 Cinematic Personal Portfolio & Multimedia Hub
+# Personal Portfolio
 
 A high-performance, visually immersive web experience built with **Next.js 16**, **Tailwind CSS 4**, and **Anime.js**. This project serves as a sophisticated portfolio and media showcase, featuring cinematic transitions, dynamic backgrounds, and a curated "fanmade" and music integration.
 
-![Banner](https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop)
+![Banner]("https://i.ibb.co/pvGhzjxw/image.png")
 
 ## ✨ Features
 
