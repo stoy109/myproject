@@ -11,7 +11,6 @@ A high-performance, visually immersive web experience built with **Next.js 16**,
 - **🎼 Integrated Media Suite**: Dedicated music and fanmade project pages with custom visualizers and layouts.
 - **🌗 Immersive UI**: Deep black aesthetics with subtle noise textures and dynamic background components.
 - **🏗️ Modern Tech Stack**: Built for the future with Bun, React 19, and Next.js 16.
-- **🔐 Secure & Scalable**: Integrated with Prisma for database management and NextAuth for secure access.
 
 ## 🚀 Tech Stack
 
@@ -22,7 +21,6 @@ A high-performance, visually immersive web experience built with **Next.js 16**,
 - **Animations**: [Anime.js 4](https://animejs.com/)
 - **Database**: [Prisma](https://www.prisma.io/)
 - **State Management**: [Zustand](https://github.com/pmndrs/zustand)
-- **AI Integration**: [z-ai-web-dev-sdk](https://github.com/google-deepmind/z-ai-web-dev-sdk)
 
 ## 🛠️ Getting Started
 
@@ -75,4 +73,4 @@ A high-performance, visually immersive web experience built with **Next.js 16**,
 This project is private and for personal use.
 
 ---
-Built with 🖤 by [stoy109](https://github.com/stoy109)
+Built with Z by [stoy109](https://github.com/stoy109)
