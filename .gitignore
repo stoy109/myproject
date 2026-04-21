@@ -71,6 +71,9 @@ prompt
 /upload/
 /download/
 /db/
+.agents/
+skills-lock.json
+
 
 # Logs and PIDs
 *.log

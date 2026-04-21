@@ -18,24 +18,28 @@ export function Background() {
     const scope = createScope();
     scopeRef.current = scope;
 
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+    // Mutable dims object — render loop always reads live values
+    const dims = { width: window.innerWidth, height: window.innerHeight };
 
     const resize = () => {
-      width = window.innerWidth;
-      height = window.innerHeight;
-      const dpr = window.devicePixelRatio;
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
+      dims.width = window.innerWidth;
+      dims.height = window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = dims.width * dpr;
+      canvas.height = dims.height * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
     resize();
     window.addEventListener('resize', resize);
 
+    // ResizeObserver catches device-toolbar changes that skip window resize
+    const ro = new ResizeObserver(resize);
+    ro.observe(document.documentElement);
+
     const stars = Array.from({ length: 120 }, () => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
+      x: Math.random() * dims.width,
+      y: Math.random() * dims.height,
       size: 0.5 + Math.random() * 2,
       baseOpacity: 0.1 + Math.random() * 0.6,
       phase: Math.random() * Math.PI * 2,
@@ -50,6 +54,8 @@ export function Background() {
     const renderFrame = (timestamp: number) => {
       const delta = (timestamp - lastTimestamp) / 1000;
       lastTimestamp = timestamp;
+
+      const { width, height } = dims; // always live
 
       ctx.clearRect(0, 0, width, height);
       time += delta;
@@ -86,6 +92,7 @@ export function Background() {
 
     return () => {
       window.removeEventListener('resize', resize);
+      ro.disconnect();
       cancelAnimationFrame(animFrameRef.current);
       scope.revert();
     };

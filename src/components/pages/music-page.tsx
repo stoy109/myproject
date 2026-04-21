@@ -205,10 +205,10 @@ export function MusicPage({ onBack }: { onBack: () => void }) {
       </h1>
 
       {/* Player */}
-      <div className="flex gap-7 mb-8 items-center max-[600px]:flex-col max-[600px]:text-center">
+      <div className="music-player-row flex gap-7 mb-8 items-center max-[600px]:flex-col max-[600px]:text-center">
         {/* Album art / visualizer */}
         <div
-          className="w-40 h-40 shrink-0 bg-white/[0.03] rounded-lg border border-white/[0.05] flex items-center justify-center overflow-hidden transition-colors duration-500 max-[600px]:w-28 max-[600px]:h-28"
+          className="music-art w-40 h-40 shrink-0 bg-white/[0.03] rounded-lg border border-white/[0.05] flex items-center justify-center overflow-hidden transition-colors duration-500 max-[600px]:w-28 max-[600px]:h-28"
           style={{ borderColor: isPlaying ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.05)' }}
         >
           <div ref={barsRef} className="flex gap-[3px] items-end h-14">
@@ -304,7 +304,7 @@ export function MusicPage({ onBack }: { onBack: () => void }) {
       </div>
 
       {/* Footer bar */}
-      <div className="shrink-0 flex items-center justify-between px-8 py-4 border-t border-white/[0.04] bg-black/80 backdrop-blur-sm">
+      <div className="music-footer shrink-0 flex items-center justify-between px-8 py-4 border-t border-white/[0.04] bg-black/80 backdrop-blur-sm">
         <button
           onClick={onBack}
           className="text-white/40 font-mono text-[13px] flex items-center gap-2 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-none"

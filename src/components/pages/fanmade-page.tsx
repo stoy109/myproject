@@ -234,11 +234,11 @@ export function FanmadePage({ onBack }: { onBack: () => void }) {
       {/* Content */}
       <div className="flex flex-1 overflow-hidden">
         {/* Left panel */}
-        <div className="w-[42%] min-w-[280px] p-6 flex flex-col gap-4">
+        <div className="fanmade-left w-[42%] min-w-[280px] p-6 flex flex-col gap-4">
           {/* YouTube Embed */}
           <div
             ref={embedRef}
-            className="w-full aspect-video bg-white/[0.03] rounded-lg border border-white/[0.05] overflow-hidden relative"
+            className="fanmade-embed w-full aspect-video bg-white/[0.03] rounded-lg border border-white/[0.05] overflow-hidden relative"
             style={{ opacity: activeLevel ? 1 : 0.4 }}
           >
             {activeLevel?.youtubeId ? (
@@ -409,7 +409,7 @@ export function FanmadePage({ onBack }: { onBack: () => void }) {
       </div>
 
       {/* Footer bar */}
-      <div className="shrink-0 flex items-center justify-between px-8 py-4 border-t border-white/[0.04] bg-black/80 backdrop-blur-sm">
+      <div className="fanmade-footer shrink-0 flex items-center justify-between px-8 py-4 border-t border-white/[0.04] bg-black/80 backdrop-blur-sm">
         <button
           onClick={onBack}
           className="text-white/40 font-mono text-[13px] flex items-center gap-2 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-none"
@@ -417,7 +417,7 @@ export function FanmadePage({ onBack }: { onBack: () => void }) {
           <ArrowLeft size={16} strokeWidth={1.5} /> BACK
         </button>
 
-        <div className="flex items-center gap-2.5 text-white/25 font-mono text-[11px]">
+        <div className="fanmade-footer-hint flex items-center gap-2.5 text-white/25 font-mono text-[11px]">
           <div className="border border-white/15 rounded px-2.5 py-1 text-sm bg-white/[0.02]">
             <ChevronLeft size={14} />
           </div>

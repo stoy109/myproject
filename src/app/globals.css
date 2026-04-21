@@ -117,3 +117,90 @@
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
 }
+
+/* ── Mobile landscape ─────────────────────────────────────────────── */
+@media (orientation: landscape) and (max-height: 500px) {
+
+  /* ── Music page ── */
+  #musicPage {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Title shrink */
+  #musicPage h1 {
+    font-size: 22px !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  /* Player: side-by-side (album art | track info) */
+  #musicPage .music-player-row {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #musicPage .music-art {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  /* Track list: smaller rows */
+  #musicPage .track-item {
+    padding: 0.35rem 0.75rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+
+  /* Footer: compact */
+  #musicPage .music-footer {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
+  /* ── Fanmade page ── */
+  /* Nav: tighter */
+  #fanmadePage nav {
+    padding: 0.4rem 1rem !important;
+    gap: 0.4rem !important;
+  }
+
+  #fanmadePage nav button {
+    padding: 0.25rem 0.75rem !important;
+    font-size: 11px !important;
+  }
+
+  /* Left panel: narrower + no extra padding */
+  #fanmadePage .fanmade-left {
+    padding: 0.5rem 0.75rem !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Embed: shorter aspect */
+  #fanmadePage .fanmade-embed {
+    aspect-ratio: auto !important;
+    height: clamp(90px, 22vh, 140px) !important;
+  }
+
+  /* Footer: hide keyboard hint, keep back button */
+  #fanmadePage .fanmade-footer-hint {
+    display: none !important;
+  }
+
+  #fanmadePage .fanmade-footer {
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+  }
+
+  /* ── Project page ── */
+  #projectPage h1 {
+    font-size: clamp(28px, 6vw, 48px) !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* ── Main page ── */
+  #mainPageWrapper h1 {
+    font-size: clamp(20px, 4vw, 36px) !important;
+    margin-bottom: 1rem !important;
+  }
+}

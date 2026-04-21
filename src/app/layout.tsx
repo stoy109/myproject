@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, Space_Mono } from "next/font/google";
 import "./globals.css";
+import OrientationGuard from "@/components/orientation-guard";
 
 const syne = Syne({
   variable: "--font-display",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${syne.variable} ${spaceMono.variable} antialiased bg-black text-white`}
       >
+        <OrientationGuard />
         {children}
       </body>
     </html>
